@@ -291,3 +291,11 @@ sudo apt-get install gnome
 sudo mount -t xboxsf share_folder mount_point
 sudo mount -t vboxsf lotsd ./share
 ```
+
+## Latex 知识点
+
+```shell
+# 查看安装了哪些中文字体
+fc-list
+fc-list ;lang=zh-cn
+```
