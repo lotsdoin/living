@@ -299,3 +299,23 @@ sudo mount -t vboxsf lotsd ./share
 fc-list
 fc-list ;lang=zh-cn
 ```
+中文模板如下:
+```tex
+\documentclass[11pt,a4paper]{article}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage{float}
+\usepackage{fontspec}
+\newfontfamily
+\zhfont[BoldFont=Songti SC]{Songti SC}
+\newfontfamily
+\zhpunctfont{Songti SC}
+\setmainfont{Times New Roman}
+\usepackage{indentfirst}
+\usepackage{zhspacing}
+\zhspacing
+\begin{document}
+测试中文
+\end{document}
+```
